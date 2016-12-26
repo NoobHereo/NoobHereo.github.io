@@ -1,0 +1,51 @@
+------Documentation--
+
+Log Document By: NoobHereo
+
+Server Founder: NoobHereo
+
+Server Source: AS3
+
+Client Source: AS3(Flash ActionScript3)
+
+Project name: ?????
+
+Project: Private
+
+Project Status: Running
+-----------------------------
+
+
+------Features---------
++Added: All Prod Projectiles
+~Fixed: Dyes and Cloths (Large, Clothing, Accessory & Small)
++Added: "opened by:" bubble text + chattext.(appears when a key is popped)
+~Fixed: Dynamic Maps(random maps for dungs)
++Added Dungeons + Behaviors:   Abyss, DavyJones, IceCave, MadLab, OryxCastle.
++Added: Dynamic Music(HighQuality)
+-Removed: Remote Textures.
++Added: Skins(Consumeables)
+~Organized: Behaviors and Maps(wServer)
++Added: Merchantlists.
++Added: New Client Loader Theme
++Implemented: YouTubePlayer for SWF(Webmain Client)
++Added: Stat Tabs.
++Added: All prod option pages + buttons.
++Added: Prod main background + transparrent backgrounds.
++Added: GraveYard Tab
++Added: Toggle HP/MP
+~Fixed: Death Table(SQL)
++Added: Multiple Behavior Functions
+~Fixed: NetworkHandler.cs
++Added: Realm Portals(respawning when 0 portals in nexus)
+---------------------
+
+------Credits------
+-NoobHereo
+-Fabian
+-Slendergo
+-VoOoLoX
+-Kithio
+-Kierze
+-C453
+---------------------
