@@ -1,39 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>NoobHereo</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .center-text {
-            text-align: center;
-        }
-        .center-text h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        .center-text p {
-            font-size: 1.2rem;
-            margin: 10px 0 0;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <div class="center-text">
-        <h1>In Development</h1>
-        <p>I am currently working on this website. Please check back soon.</p>
-    </div>
-</body>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">CURRENT</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">BLOG</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome to my website!</h1>
+        <p>I use this website to showcase my portfolio as a game developer and<br>
+          blog about various interesting topics related to programming.<br>
+          Most of which will be available on my github linked below!
+        </p>
+        <a href="" class="hero-btn">READ MORE</a>
+      </div>
+    </section>
+
+    <!-- Block One -->
+     <section class="blockone">
+      <h1>Block One</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="row">
+        <div class="blockone-col">
+          <h3>Box 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+            Donec sit.</p>
+        </div>
+        <div class="blockone-col">
+          <h3>Box 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+            Donec sit.</p>
+        </div>
+        <div class="blockone-col">
+          <h3>Box 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+            Donec sit.</p>
+        </div>
+      </div>
+     </section>
+
+    <!-- Current Project -->
+    <section class="current">
+      <h1>Check out the project I am currently working on</h1>
+      <a href="" class="hero-btn">READ MORE</a>
+    </section>
+
+    <!-- Experience -->
+    <section class="exp">
+      <h1>Experience</h1>
+      <p>Some of the games I have worked on over time.<br>You can find more games I have worked on in my portfolio.</p>
+
+      <div class="row">
+        <div class="exp-col">
+          <img src="images/rotmg.png">
+          <div class="layer">
+            <h3>Realm of the Mad God</h3>
+          </div>
+        </div>
+        <div class="exp-col">
+          <img src="images/el.png" href="#">
+          <div class="layer">
+            <h3>Endland Legends</h3>
+          </div>
+        </div>
+        <div class="exp-col">
+          <img src="images/cc.png" href="#">
+          <div class="layer">
+            <h3>CAVE CRAVLER</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block Three -->
+     <section class="blockthree">
+      <h1>Block Three</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="row">
+        <div class="blockthree-col">
+          <img src="images/testImgRect.png">
+          <h3>Box 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla.</p>
+        </div>
+        <div class="blockthree-col">
+          <img src="images/testImgRect.png">
+          <h3>Box 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla.</p>
+        </div>
+        <div class="blockthree-col">
+          <img src="images/testImgRect.png">
+          <h3>Box 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla.</p>
+          </div>
+      </div>
+     </section>
+
+    <!-- Block Four -->
+     <section class="blockfour">
+      <h1>Block Four</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="row">
+        <div class="blockfour-col">
+          <img src="images/testImgCubeLarge.png">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla, eleifend faucibus est
+              sollicitudin ut. Maecenas ut venenatis ex, 
+              et dapibus purus.</p>
+              <h3>Box 1</h3>
+          </div>
+        </div>
+        <div class="blockfour-col">
+          <img src="images/testImgCubeLarge.png">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla, eleifend faucibus est
+              sollicitudin ut. Maecenas ut venenatis ex, 
+              et dapibus purus.</p>
+              <h3>Box 2</h3>
+          </div>
+        </div>
+     </section>
+
+      <!-- Footer -->
+      <section class="footer">
+        <h4>Other Platforms</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Pellentesque aliquet turpis nulla, eleifend faucibus est<br>
+          sollicitudin ut. Maecenas ut venenatis ex, 
+          et dapibus purus.</p>
+          <div class="icons">
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <p>Lorem Ipsum</p>
+      </section>
+
+    <!-- Small viewport menu toggle -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right ="-200px";
+      }
+    </script>
+  </body>
 </html>
