@@ -1,127 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>NoobHereo</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="images/logo.png"></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="">CURRENT</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">BLOG</a></li>
-          </ul>
-          <a href="" class="hero-btn" onclick="toggleDarkMode()">DARK MODE</a>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <div class="text-box">
-        <h1>Welcome to my website!</h1>
-        <p>I use this website to showcase my portfolio as a game developer and<br>
-          blog about various interesting topics related to programming.<br>
-          Most of which will be available on my github linked below!
-        </p>
-        <a href="" class="hero-btn">READ MORE</a>
-      </div>
-    </section>
-
-    <!-- Current Project -->
-    <section class="current">
-      <h1>Check out the project I am currently working on</h1>
-      <a href="" class="hero-btn">READ MORE</a>
-    </section>
-
-    <!-- Experience -->
-    <section class="exp">
-      <h1>Experience</h1>
-      <p>Some of the games I have worked on over time.<br>You can find more games I have worked on in my portfolio.</p>
-
-      <div class="row">
-        <div class="exp-col">
-          <img src="images/rotmg.png">
-          <div class="layer">
-            <h3>Realm of the Mad God</h3>
-          </div>
-        </div>
-        <div class="exp-col">
-          <img src="images/el.png" href="#">
-          <div class="layer">
-            <h3>Endland Legends</h3>
-          </div>
-        </div>
-        <div class="exp-col">
-          <img src="images/cc.png" href="#">
-          <div class="layer">
-            <h3>CAVE CRAVLER</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
+   <head>
+      <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>NoobHereo</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+      <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <section class="header">
+         <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href="">CURRENT</a></li>
+                  <li><a href="">PORTFOLIO</a></li>
+                  <li><a href="">BLOG</a></li>
+               </ul>
+               <a href="" class="hero-btn" onclick="toggleDarkMode()">DARK MODE</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <div class="text-box">
+            <h1>Welcome to my website!</h1>
+            <p>I use this website to showcase my portfolio as a game developer and<br>
+               blog about various interesting topics related to programming.<br>
+               Most of which will be available on my github linked below!
+            </p>
+            <a href="" class="hero-btn">READ MORE</a>
+         </div>
+      </section>
+      <!-- Current Project -->
+      <section class="current">
+         <h1>Check out the project I am currently working on</h1>
+         <a href="" class="hero-btn">READ MORE</a>
+      </section>
+      <!-- Experience -->
+      <section class="exp">
+         <h1>Experience</h1>
+         <p>Some of the games I have worked on over time.<br>You can find more games I have worked on in my portfolio.</p>
+         <div class="row">
+            <div class="exp-col">
+               <img src="images/rotmg.png">
+               <div class="layer">
+                  <h3>Realm of the Mad God</h3>
+               </div>
+            </div>
+            <div class="exp-col">
+               <img src="images/el.png" href="#">
+               <div class="layer">
+                  <h3>Endland Legends</h3>
+               </div>
+            </div>
+            <div class="exp-col">
+               <img src="images/cc.png" href="#">
+               <div class="layer">
+                  <h3>CAVE CRAVLER</h3>
+               </div>
+            </div>
+         </div>
+      </section>
       <!-- Footer -->
       <section class="footer">
-        <h4>Other Platforms</h4>
-        <p>Find videos, code, announcements and more related to my projects by<br>pressing the
-          media icons below</p>
-          <div class="icons">
+         <h4>Other Platforms</h4>
+         <p>Find videos, code, announcements and more related to my projects by<br>pressing the
+            media icons below
+         </p>
+         <div class="icons">
             <i class="fa-brands fa-discord"></i>
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-x-twitter"></i>
-          </div>
-          <p>NoobHereo</p>
+         </div>
+         <p>NoobHereo</p>
       </section>
-
-    <!-- Small viewport menu toggle -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      var darkMode = false;
-      function showMenu(){
-        navLinks.style.right = "0";
-      }
-      function hideMenu(){
-        navLinks.style.right ="-200px";
-      }
-      function toggleDarkMode(){
-        // Check if the dark mode is already active
-        if (document.body.style.background === "rgb(7, 7, 5)") {
-            // If it's dark mode, change it back to white (light mode)
-            document.body.style.background = "white";
-            // Change the button text to "LIGHT MODE"
-            document.querySelector('.hero-btn').textContent = "DARK MODE";
-            // Store the background color in localStorage
-            localStorage.setItem('backgroundColor', 'white');
-        } else {
-            // If it's light mode, change to dark mode
-            document.body.style.background = "#070705";
-            // Change the button text to "DARK MODE"
-            document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-            // Store the background color in localStorage
-            localStorage.setItem('backgroundColor', '#070705');
-        }
-      }
-      // Check the saved background color in localStorage when the page loads
-      window.onload = function() {
-          const savedColor = localStorage.getItem('backgroundColor');
-          if (savedColor) {
-              document.body.style.background = savedColor;
-              // If the saved color is dark, change the button text to "DARK MODE"
-              if (savedColor === "#070705") {
-                  document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-              } else {
-                  document.querySelector('.hero-btn').textContent = "DARK MODE";
-              }
-          }
-      }
-    </script>
-  </body>
+      <!-- Small viewport menu toggle -->
+      <script>
+         var navLinks = document.getElementById("navLinks");
+         var darkMode = false;
+         function showMenu(){
+           navLinks.style.right = "0";
+         }
+         function hideMenu(){
+           navLinks.style.right ="-200px";
+         }
+         function toggleDarkMode(){
+           // Check if the dark mode is already active
+           if (document.body.style.background === "rgb(7, 7, 5)") {
+               // If it's dark mode, change it back to white (light mode)
+               document.body.style.background = "white";
+               // Change the button text to "LIGHT MODE"
+               document.querySelector('.hero-btn').textContent = "DARK MODE";
+               // Store the background color in localStorage
+               localStorage.setItem('backgroundColor', 'white');
+           } else {
+               // If it's light mode, change to dark mode
+               document.body.style.background = "#070705";
+               // Change the button text to "DARK MODE"
+               document.querySelector('.hero-btn').textContent = "LIGHT MODE";
+               // Store the background color in localStorage
+               localStorage.setItem('backgroundColor', '#070705');
+           }
+         }
+         // Check the saved background color in localStorage when the page loads
+         window.onload = function() {
+             const savedColor = localStorage.getItem('backgroundColor');
+             if (savedColor) {
+                 document.body.style.background = savedColor;
+                 // If the saved color is dark, change the button text to "DARK MODE"
+                 if (savedColor === "#070705") {
+                     document.querySelector('.hero-btn').textContent = "LIGHT MODE";
+                 } else {
+                     document.querySelector('.hero-btn').textContent = "DARK MODE";
+                 }
+             }
+         }
+      </script>
+   </body>
 </html>
