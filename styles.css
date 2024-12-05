@@ -14,6 +14,9 @@ html {
     background-size: cover;
     position: relative;
 }
+body{
+    background: #070705;
+}
 
 .rotmg-header{
     min-height: 50vh;

@@ -183,31 +183,13 @@
 
         <!-- JavaScript -->
         <script>
-            // Existing navigation and dark mode logic
             var navLinks = document.getElementById("navLinks");
-            var darkMode = false;
-        
             function showMenu(){
               navLinks.style.right = "0";
             }
-        
             function hideMenu(){
               navLinks.style.right ="-200px";
             }
-        
-            // Check the saved background color in localStorage when the page loads
-            window.onload = function() {
-                const savedColor = localStorage.getItem('backgroundColor');
-                if (savedColor) {
-                    document.body.style.background = savedColor;
-                    // Update the button text
-                    if (savedColor === "#070705") {
-                        document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-                    } else {
-                        document.querySelector('.hero-btn').textContent = "DARK MODE";
-                    }
-                }
-            };
         
             // Carousel functionality
             const images = document.querySelector('.carousel-images');

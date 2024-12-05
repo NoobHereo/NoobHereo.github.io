@@ -21,7 +21,6 @@
                   <li><a href="wip.html">PORTFOLIO</a></li>
                   <li><a href="wip.html">BLOG</a></li>
                </ul>
-               <a href="" class="hero-btn" onclick="toggleDarkMode()">DARK MODE</a>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
          </nav>
@@ -82,37 +81,6 @@
          }
          function hideMenu(){
            navLinks.style.right ="-200px";
-         }
-         function toggleDarkMode(){
-           // Check if the dark mode is already active
-           if (document.body.style.background === "rgb(7, 7, 5)") {
-               // If it's dark mode, change it back to white (light mode)
-               document.body.style.background = "white";
-               // Change the button text to "LIGHT MODE"
-               document.querySelector('.hero-btn').textContent = "DARK MODE";
-               // Store the background color in localStorage
-               localStorage.setItem('backgroundColor', 'white');
-           } else {
-               // If it's light mode, change to dark mode
-               document.body.style.background = "#070705";
-               // Change the button text to "DARK MODE"
-               document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-               // Store the background color in localStorage
-               localStorage.setItem('backgroundColor', '#070705');
-           }
-         }
-         // Check the saved background color in localStorage when the page loads
-         window.onload = function() {
-             const savedColor = localStorage.getItem('backgroundColor');
-             if (savedColor) {
-                 document.body.style.background = savedColor;
-                 // If the saved color is dark, change the button text to "DARK MODE"
-                 if (savedColor === "#070705") {
-                     document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-                 } else {
-                     document.querySelector('.hero-btn').textContent = "DARK MODE";
-                 }
-             }
          }
       </script>
    </body>
