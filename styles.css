@@ -1,3 +1,12 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+.dark-mode {
+    --bg-color: #070705;
+    --text-color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +14,9 @@
 }
 html {
     scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-color);
 }
 .header{
     min-height: 100vh;
@@ -150,7 +162,7 @@ a {
     padding-top: 50px;
 }
 .exp h1{
-    color: #fff;
+    color: var(--text-color);
 }
 .exp-col{
     flex-basis: 32%;
@@ -203,7 +215,7 @@ a {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
-    color: #fff;
+    color: var(--text-color);
 }
 .icons .fa-brands{
     color: #c9592e;
@@ -220,7 +232,7 @@ a {
     padding-top: 50px;
 }
 .descShowcase h1{
-    color: #fff;
+    color: var(--text-color);
 }
 .descShowcase-col{
     flex-basis: 31%;
@@ -234,7 +246,7 @@ a {
     border: 2px solid #c9592e;
 }
 .descShowcase-col h3{
-    color: #fff;
+    color: var(--text-color);
 }
 .descShowcase-col p{
     padding: 0;

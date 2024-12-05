@@ -197,15 +197,13 @@
         
             // Check the saved background color in localStorage when the page loads
             window.onload = function() {
-                const savedColor = localStorage.getItem('backgroundColor');
-                if (savedColor) {
-                    document.body.style.background = savedColor;
-                    // Update the button text
-                    if (savedColor === "#070705") {
-                        document.querySelector('.hero-btn').textContent = "LIGHT MODE";
-                    } else {
-                        document.querySelector('.hero-btn').textContent = "DARK MODE";
-                    }
+                const savedTheme = localStorage.getItem('theme');
+                const body = document.body;
+
+                if (savedTheme === 'dark') {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
                 }
             };
         
