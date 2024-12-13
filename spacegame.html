@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>NoobHereo</title>
+        <link rel="icon" href="https://noobhereo.github.io/images/logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+     </head>
+     <body>
+        <section class="space-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                      <li><a href="wip.html">CURRENT</a></li>
+                      <li><a href="wip.html">PORTFOLIO</a></li>
+                      <li><a href="wip.html">BLOG</a></li>
+                   </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+             </nav>
+            <div class="text-box">
+                <h1>Untitled Space Game</h1>
+                <p>A topdown 2d retro game that incorperates cozy gameplay and bullet hell combat.<br>
+                   A 3-4 month project for me to get back into game development while studying at university.
+                </p>
+             </div>
+        </section>
+        <hr>
+        <section class="exp">
+            <h1>Development</h1>
+            <p>December 2024<br><br>
+            I just started development on this prototype (not really a game yet) to see if it works.<br>
+            The idea is to spark creativity with the cozy elements that will be base design, but also challenge the player<br>
+            in both player vs player and player vs bot combat and try to inspire "world" exploration of<br>
+            interstellar procedurally generated retro space filled with loot and fights.<br><br>
+            
+            The game is currently being developed with audio too which features <br> some tracks made by my friend <b>Lashlie</b>.<br><br>
+
+            Join my discord server to see more frequent and active updates on this game prototype.<br><br>
+            <a href="https://discord.gg/RudSfxZ" target="_blank" class="hero-btn">DISCORD SERVER</a>
+        </p>
+        </section>
+        <hr>
+        <section class="descShowcase">
+            <h1>Preview</h1>
+            <p>The prototype draws inspiration from the space game <i>Faster Than Light (FTL)</i>, Disney movie <i>Treasure Planet (Disney)</i> and other medias set in space.</p>
+            <div class="row">
+              <div class="descShowcase-col">
+                <img src="images/space-game/preview1.png">
+                <h3>Base Interior Test</h3>
+                <p>(<i>Very early concept art for the prototype</i>)</p>
+              </div>
+              <div class="descShowcase-col">
+                <img src="images/space-game/preview2.png">
+                <h3>Space Region - Green</h3>
+                <p>(<i>Very early concept art for the prototype</i>)</p>
+              </div>
+              <div class="descShowcase-col">
+                <img src="images/space-game/preview3.png">
+                <h3>Space Region - Blue</h3>
+                <p>(<i>Very early concept art for the prototype</i>)</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Footer -->
+      <section class="footer">
+        <h4>Other Platforms</h4>
+        <p>Find videos, code, announcements and more related to my projects by<br>pressing the
+           media icons below
+        </p>
+        <div class="icons">
+           <a href="https://discord.gg/RudSfxZ" target="_blank"><i class="fa-brands fa-discord"></i></a>
+           <a href="https://github.com/NoobHereo" target="_blank"><i class="fa-brands fa-github"></i></a>
+           <a href="https://youtube.com/@NoobHereo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+           <a href="https://x.com/noobhereo" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>NoobHereo</p>
+     </section>
+
+        <!-- JavaScript -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+              navLinks.style.right = "0";
+            }
+            function hideMenu(){
+              navLinks.style.right ="-200px";
+            } 
+     </script>
+     </body>
+</html>

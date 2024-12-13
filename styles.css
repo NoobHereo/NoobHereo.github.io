@@ -27,6 +27,15 @@ body{
     position: relative;
 }
 
+.space-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/space-game/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -128,12 +137,15 @@ hr {
 a {
     color: #c9592e;
 }
+b {
+    color: #c9592e;
+}
 
 /* Current Project */
 .current{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/testing/testImgBannerSmall.png);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/space-game/fpBanner.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
