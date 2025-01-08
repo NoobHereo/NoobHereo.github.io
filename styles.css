@@ -46,6 +46,18 @@ nav img{
     width: 80px;
     /*border: 1px solid #c9592e;*/
 }
+
+/* Only for the front page avatar credits */
+nav a{
+    font-size: 0;
+    text-decoration: none;
+    transition: 0.25s;
+}
+nav a:hover{
+    font-size: 14px;
+}
+/* ~ */
+
 .nav-links{
     flex: 1;
     text-align: right;
